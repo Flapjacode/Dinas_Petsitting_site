@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dina's Pet Services</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+  <nav class="navbar">
+    <div class="logo">🐾 Dina’s Pet Services</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="menu-btn">☰</div>
+  </nav>
+</header>
+
+<!-- Hero -->
+<section id="home" class="hero">
+  <h1>Your Pet’s Best Friend<br>When You’re Away 🐶❤️</h1>
+  <p>Trusted walks, loving care, and safety first for every furry family member.</p>
+  <a href="#contact" class="cta-btn">Book a Walk</a>
+</section>
+
+<!-- Services -->
+<section id="services" class="services">
+  <h2>Services</h2>
+  <div class="service-grid">
+    <div class="service-card">
+      <h3>Daily Dog Walks</h3>
+      <p>Fun walks tailored to your dog’s pace & personality.</p>
+    </div>
+    <div class="service-card">
+      <h3>Pet Sitting</h3>
+      <p>In-home comfort, feeding, love & play time.</p>
+    </div>
+    <div class="service-card">
+      <h3>Drop-In Visits</h3>
+      <p>Quick care visits for feeding, potty breaks & cuddles.</p>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="about">
+  <h2>Why Choose Dina?</h2>
+  <p>
+    With years of experience caring for pets, I treat every furry client like family.
+    From energetic pups to senior companions, your pet’s happiness & safety are my top priorities.
+  </p>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="contact">
+  <h2>Let's Chat 🐕✨</h2>
+  <p>Book a walk or ask a question — I’d love to meet your pet!</p>
+
+  <a href="mailto:dinapetservices@example.com" class="cta-btn">
+    Send Email
+  </a>
+</section>
+
+<script>
+const menuBtn = document.querySelector('.menu-btn');
+const navLinks = document.querySelector('.nav-links');
+
+menuBtn.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+</script>
+
+</body>
+</html>
